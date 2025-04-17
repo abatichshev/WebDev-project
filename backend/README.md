@@ -11,8 +11,7 @@ Authentication is handled using JWT (via SimpleJWT).
 2. Navigate to the `backend` directory
 3. Install dependencies:
 
-```bash
-pip install -r requirements.txt
+
 
 
 4. Run migrations:
