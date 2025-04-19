@@ -14,6 +14,10 @@ pip install django djangorestframework djangorestframework-simplejwt django-cors
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 813ad3ffce5a163008ee468974295dce2606c62a
 
 
 4. Run migrations:
