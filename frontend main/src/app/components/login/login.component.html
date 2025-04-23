@@ -1,0 +1,9 @@
+<div class="container w-25 mt-5">
+    <h3 class="mb-3">Авторизация</h3>
+    <form (ngSubmit)="submit()" #f="ngForm">
+      <input name="username" [(ngModel)]="username" class="form-control mb-2" placeholder="Username" required>
+      <input name="password" [(ngModel)]="password" type="password" class="form-control mb-3" placeholder="Password" required>
+      <button [disabled]="f.invalid" class="btn btn-primary w-100">Login</button>
+    </form>
+  </div>
+  

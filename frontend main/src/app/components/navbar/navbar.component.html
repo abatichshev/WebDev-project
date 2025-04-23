@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand bg-light p-2 mb-4">
+    <a class="navbar-brand" routerLink="/">Bookstore</a>
+    <div class="ms-auto">
+      <button *ngIf="!(auth.user$ | async)" class="btn btn-outline-primary" routerLink="/login">
+        Login
+      </button>
+      <button *ngIf="auth.user$ | async"
+              class="btn btn-outline-danger"
+              (click)="auth.logout(); router.navigate(['/login'])">
+        Logout
+      </button>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  
